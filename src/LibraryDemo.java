@@ -44,7 +44,7 @@ public class LibraryDemo {
             System.out.println("Book not found!");
         }
 
-        // Step 4: Try borrowing the same book again (exception)
+   
         System.out.println("\n--- Trying to Borrow Already Borrowed Book ---");
         try {
             ((Borrowable) borrowItem).borrowItem(user);
