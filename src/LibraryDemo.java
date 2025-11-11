@@ -10,7 +10,7 @@ public class LibraryDemo {
         System.out.print("How many books do you want to add? ");
 
         int n = sc.nextInt();
-        sc.nextLine(); // consume newline
+        sc.nextLine(); 
 
         for (int i = 1; i <= n; i++) {
             System.out.println("\nEnter details for Book " + i + ":");
@@ -45,7 +45,7 @@ public class LibraryDemo {
         }
 
    
-        System.out.println("\n--- Trying to Borrow Already Borrowed Book ---");
+        System.out.println("\n Trying to Borrow Already Borrowed Book ---");
         try {
             ((Borrowable) borrowItem).borrowItem(user);
         } catch (BookNotAvailable e) {
@@ -77,7 +77,7 @@ public class LibraryDemo {
 
         library.displayAllAvailableItems();
 
-        sc.close();
+       
     }
 
 
